@@ -1,10 +1,9 @@
 import React, { Component } from "react";
-import PropTypes from "prop-types";
 import { polyfill } from 'react-lifecycles-compat';
 
 import { Platform, StyleSheet, Animated } from "react-native";
 
-class CardFlip extends Component<Props> {
+class CardFlip extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -327,6 +326,7 @@ CardFlip.defaultProps = {
   onFlipEnd: () => { }
 };
 
+/*
 CardFlip.propTypes = {
   style: PropTypes.oneOfType([
     PropTypes.number,
@@ -341,6 +341,7 @@ CardFlip.propTypes = {
   onFlipStart: PropTypes.func,
   perspective: PropTypes.number
 };
+*/
 
 polyfill(CardFlip)
 export default CardFlip 
